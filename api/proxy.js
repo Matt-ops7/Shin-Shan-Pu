@@ -1,6 +1,3 @@
- * 4. Esta función devuelve la respuesta de Google a tu aplicación.
- */
-
 export default async function handler(req, res) {
   // Obtener la clave de API de una variable de entorno segura.
   // NUNCA la escribas directamente en el código.
@@ -42,3 +39,4 @@ export default async function handler(req, res) {
     return res.status(500).json({ error: 'Error interno en el servidor proxy.' });
   }
 }
+
